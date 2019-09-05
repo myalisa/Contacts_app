@@ -13,6 +13,7 @@ Contact.destroy_all
 
   contact.save
   
+  
 end
 
 

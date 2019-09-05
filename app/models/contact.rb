@@ -5,11 +5,13 @@ class Contact < ApplicationRecord
   end
 
   def full_name
-    "#{first_name} #{last_name}"
+    result = "#{first_name}"
+    result += " #{middle_name} " if middle_name
+    result += "#{last_name}"
   end
 
   def japan_number
-    
+    "+ 81 #{phone_number}"
     
   end
 end
